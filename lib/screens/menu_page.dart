@@ -21,7 +21,36 @@ class _MenuPageState extends State<MenuPage> {
       price: '13636',
       description: 'Kopi hitam klasik yang kuat dan penuh aroma.',
     ),
-    // Beberapa item menu lainnya...
+    MenuItem(
+      image: 'assets/Cold Coffee.png',
+      name: 'Cappucino',
+      price: '13636',
+      description: 'Kopi dengan busa susu yang tebal dan nikmat.',
+    ),
+    MenuItem(
+      image: 'assets/Espresso.png',
+      name: 'Espresso',
+      price: '12272',
+      description: 'Kopi pekat untuk menambah energi di pagi hari.',
+    ),
+    MenuItem(
+      image: 'assets/Latte.png',
+      name: 'Latte',
+      price: '15000',
+      description: 'Kopi dengan susu yang lembut dan creamy.',
+    ),
+    MenuItem(
+      image: 'assets/Macchiato.png',
+      name: 'Macchiato',
+      price: '15000',
+      description: 'espresso dengan sedikit busa dan susu.',
+    ),
+    MenuItem(
+      image: 'assets/Vietnam Drip.png',
+      name: 'Vietnam Drip',
+      price: '13636',
+      description: 'Kopi vietnam drip dengan rasa yang kaya dan manis.',
+    ),
   ];
 
   // Map untuk menghitung jumlah item yang dipilih oleh pengguna.
@@ -100,7 +129,7 @@ class _MenuPageState extends State<MenuPage> {
                             (BuildContext context, StateSetter setStateModal) {
                           return Container(
                             padding: EdgeInsets.all(20),
-                            height: 300,
+                            height: 350,
                             child: Column(
                               children: [
                                 Image.asset(menuItems[index].image,
